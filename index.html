@@ -4,44 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mateos Livros</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="banner">
-            <h1>Mateos Livros</h1>
-            <p>A maior livraria virtual do Wanda</p>
-        </div>
+    <header class="header">
+        <h1>Mateos Livros</h1>
+        <p>O maior site de ebooks do Wanda!</p>
     </header>
 
-    <!-- Barra de Pesquisa -->
-    <nav>
-        <input type="text" id="searchBar" placeholder="Procure seu livro...">
-        <button onclick="searchBooks()">Buscar</button>
+    <nav class="navbar">
+        <a href="#destaques">Destaques da Semana</a>
+        <a href="#recomendacoes">Recomendações</a>
+        <a href="#favoritos">Favoritos</a>
     </nav>
 
-    <!-- Catálogo de Livros -->
-    <main>
-        <h2>Catálogo</h2>
-        <div class="book-grid" id="bookList">
-            <!-- Livros serão adicionados dinamicamente -->
-        </div>
-    </main>
-
-    <!-- Favoritos -->
-    <section id="favoritesSection">
-        <h2>Favoritos</h2>
-        <div class="favorites-grid" id="favoritesList">
-            <!-- Favoritos aparecem aqui -->
+    <section class="banner">
+        <h2>Destaques da Semana</h2>
+        <div class="carousel">
+            <!-- Livros em destaque -->
+            <div class="carousel-item">📖 Dom Casmurro - Machado de Assis</div>
+            <div class="carousel-item">📖 O Pequeno Príncipe - Antoine de Saint-Exupéry</div>
+            <div class="carousel-item">📖 1984 - George Orwell</div>
         </div>
     </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Mateos Livros. Todos os direitos reservados a Wanda mascagni de Sá.</p>
+    <section id="recomendacoes" class="recomendacoes">
+        <h2>Recomendações</h2>
+        <ul class="book-list">
+            <li>
+                <h3>📘 A Revolução dos Bichos - George Orwell</h3>
+                <button>Descrição e Compra</button>
+            </li>
+            <li>
+                <h3>📘 O Alquimista - Paulo Coelho</h3>
+                <button>Descrição e Compra</button>
+            </li>
+            <li>
+                <h3>📘 Moby Dick - Herman Melville</h3>
+                <button>Descrição e Compra</button>
+            </li>
+        </ul>
+    </section>
+
+    <section id="favoritos" class="favoritos">
+        <h2>Seus Favoritos</h2>
+        <p>Você ainda não adicionou nenhum livro aos favoritos!</p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Mateos Livros - Todos os direitos reservados.</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
-
