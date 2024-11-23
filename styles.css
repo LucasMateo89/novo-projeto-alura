@@ -1,0 +1,122 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    max-width: 1728px;
+    margin: auto;
+}
+
+/* Banner */
+.banner {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.5em;
+}
+
+/* Barra de Pesquisa */
+nav {
+    background-color: #eaeaea;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav input {
+    width: 70%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav button {
+    background: #cc0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+nav button:hover {
+    background: #990000;
+}
+
+/* Catálogo de Livros */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.book-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.book-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.book-item p {
+    font-size: 0.9em;
+    padding: 0 10px;
+}
+
+.book-item button {
+    background: #0044cc;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.book-item button:hover {
+    background: #0033a0;
+}
+
+/* Favoritos */
+#favoritesSection {
+    background: #fefefe;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.favorites-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    

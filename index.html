@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateos Livros</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="banner">
+            <h1>Mateos Livros</h1>
+            <p>A maior livraria virtual do Wanda</p>
+        </div>
+    </header>
+
+    <!-- Barra de Pesquisa -->
+    <nav>
+        <input type="text" id="searchBar" placeholder="Procure seu livro...">
+        <button onclick="searchBooks()">Buscar</button>
+    </nav>
+
+    <!-- Catálogo de Livros -->
+    <main>
+        <h2>Catálogo</h2>
+        <div class="book-grid" id="bookList">
+            <!-- Livros serão adicionados dinamicamente -->
+        </div>
+    </main>
+
+    <!-- Favoritos -->
+    <section id="favoritesSection">
+        <h2>Favoritos</h2>
+        <div class="favorites-grid" id="favoritesList">
+            <!-- Favoritos aparecem aqui -->
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Mateos Livros. Todos os direitos reservados a Wanda mascagni de Sá.</p>
+    </footer>
+</body>
+</html>
+
